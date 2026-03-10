@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CredVault | AI-Powered Loan Decisioning</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <div class="logo-icon"><i class="ph-fill ph-bank"></i></div>
+                <span class="logo-text">Cred<span class="logo-highlight">Vault</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#hero">Overview</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#engine">The Engine</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-outline" onclick="scrollToEngine()">Try Demo</button>
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=User&background=0A192F&color=fff&rounded=true" alt="Profile" class="avatar">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-content reveal fade-up">
+                    <div class="badge-pill">
+                        <span class="pulse-dot"></span> Next-Gen Underwriting AI
+                    </div>
+                    <h1>The Future of <br><span class="text-gradient">Loan Decisioning</span> is Here.</h1>
+                    <p class="hero-subtext">Experience instant risk assessment combining deep financial models with ultra-fast document verification. No more waiting days for approval.</p>
+                    <div class="hero-actions">
+                        <button class="btn-primary" onclick="scrollToEngine()">
+                            <span class="btn-text">Check Your Eligibility</span>
+                            <i class="ph-bold ph-arrow-right"></i>
+                            <div class="btn-shine"></div>
+                        </button>
+                        <a href="#how-it-works" class="link-secondary">
+                            Learn how it works <i class="ph-bold ph-caret-down"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual reveal fade-left delay-1">
+                    <div class="floating-card glass-card visual-card-1">
+                        <div class="icon-box blue-box"><i class="ph-fill ph-clock-countdown"></i></div>
+                        <div class="visual-text">
+                            <h4>Average Approval Time</h4>
+                            <div class="value-highlight">1.2 <span class="unit">Seconds</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-card glass-card visual-card-2">
+                        <div class="icon-box green-box"><i class="ph-fill ph-shield-check"></i></div>
+                        <div class="visual-text">
+                            <h4>Bank-Grade Security</h4>
+                            <p>256-bit AES Encryption</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-card glass-card visual-card-3">
+                        <div class="icon-box purple-box"><i class="ph-fill ph-buildings"></i></div>
+                        <div class="visual-text">
+                            <h4>B2B & B2C Analytics</h4>
+                            <p>Individual & Corporate Profiles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="info-section" id="how-it-works">
+            <div class="section-header reveal fade-up">
+                <h2>Intelligent Processing in <span class="text-primary">4 Steps</span></h2>
+                <p>Our proprietary engine eliminates paperwork and manual reviews for everyone.</p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step-card premium-card reveal fade-up">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i class="ph-duotone ph-identification-card"></i></div>
+                    <h3>Provide Details</h3>
+                    <p>Enter your individual or corporate information securely into our portal.</p>
+                </div>
+                
+                <div class="step-card premium-card reveal fade-up delay-1">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i class="ph-duotone ph-file-arrow-up"></i></div>
+                    <h3>Verify Income</h3>
+                    <p>Upload statements or GST filings. Our OCR extracts data instantly.</p>
+                </div>
+                
+                <div class="step-card premium-card reveal fade-up delay-2">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i class="ph-duotone ph-cpu"></i></div>
+                    <h3>AI Processing</h3>
+                    <p>Our engine connects to commercial & consumer bureaus in milliseconds.</p>
+                </div>
+                
+                <div class="step-card premium-card reveal fade-up delay-3">
+                    <div class="step-number">04</div>
+                    <div class="step-icon green-text"><i class="ph-duotone ph-check-circle"></i></div>
+                    <h3>Instant Decision</h3>
+                    <p>Receive your eligibility status, approved credit limit, and exact interest rate.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Engine / Dashboard Section -->
+        <section class="engine-section section-padding" id="engine">
+            <div class="dashboard-wrapper reveal fade-up">
+                <!-- Header Text -->
+                <div class="dashboard-header-text">
+                    <h2>Live Decisioning Engine.</h2>
+                    <p>Select your profile type and input parameters to run the simulation.</p>
+                </div>
+
+                <!-- Profile Type Toggle -->
+                <div class="profile-toggle-wrapper reveal fade-up">
+                    <div class="profile-toggle">
+                        <input type="radio" id="profileIndividual" name="profileType" value="individual" checked>
+                        <label for="profileIndividual" class="toggle-btn">
+                            <i class="ph-fill ph-user"></i> Individual
+                        </label>
+
+                        <input type="radio" id="profileCompany" name="profileType" value="company">
+                        <label for="profileCompany" class="toggle-btn">
+                            <i class="ph-fill ph-buildings"></i> Company
+                        </label>
+                        <div class="toggle-slider"></div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    
+                    <!-- Left Column: Input Form & Upload Zone -->
+                    <div class="onboarding-section">
+                        
+                        <!-- Applicant Details Card -->
+                        <div class="card premium-card form-card">
+                            <div class="card-header">
+                                <div class="header-icon"><i class="ph-fill ph-identification-badge"></i></div>
+                                <div>
+                                    <h2 id="formTitle">Applicant Details</h2>
+                                    <p id="formSubtitle">Securely enter the primary borrower's information.</p>
+                                </div>
+                            </div>
+                            <form id="loan-form" class="form-layout">
+                                
+                                <!-- Individual Fields -->
+                                <div id="individualFields">
+                                    <div class="form-group">
+                                        <label for="indName">Full Name</label>
+                                        <div class="input-wrapper">
+                                            <i class="ph ph-user input-icon"></i>
+                                            <input type="text" id="indName" placeholder="Rahul Sharma" required>
+                                            <div class="input-glow"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="indPan">PAN Card Number</label>
+                                        <div class="input-wrapper">
+                                            <i class="ph ph-identification-card input-icon"></i>
+                                            <input type="text" id="indPan" class="uppercase" placeholder="ABCDE1234F" pattern="[A-Za-z]{5}\d{4}[A-Za-z]{1}" maxlength="10" required>
+                                            <div class="input-glow"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="indSalary">Declared Yearly Income</label>
+                                        <div class="input-wrapper">
+                                            <i class="ph ph-wallet input-icon"></i>
+                                            <input type="number" id="indSalary" placeholder="Less than 1 Lakh? ITR is optional." min="0" required>
+                                            <div class="input-glow"></div>
+                                        </div>
+                                        <p class="field-hint" id="salaryHint">If salary &ge; ₹1,00,000, please upload ITR in documents below.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Company Fields (Hidden initially) -->
+                                <div id="companyFields" class="hidden">
+                                    <div class="form-group">
+                                        <label for="compName">Company Name</label>
+                                        <div class="input-wrapper">
+                                            <i class="ph ph-buildings input-icon"></i>
+                                            <input type="text" id="compName" placeholder="TechCorp Solutions Pvt Ltd">
+                                            <div class="input-glow"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="compPan">Company PAN Details</label>
+                                        <div class="input-wrapper">
+                                            <i class="ph ph-identification-card input-icon"></i>
+                                            <input type="text" id="compPan" class="uppercase" placeholder="ABCDE1234F" pattern="[A-Za-z]{5}\d{4}[A-Za-z]{1}" maxlength="10">
+                                            <div class="input-glow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Common Field: Requested Amount -->
+                                <div class="form-group">
+                                    <label for="loanAmount">Requested Loan Amount</label>
+                                    <div class="input-wrapper">
+                                        <i class="ph ph-currency-inr input-icon"></i>
+                                        <input type="number" id="loanAmount" placeholder="500000" min="10000" max="50000000" required>
+                                        <div class="input-glow"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Document Upload Zone -->
+                        <div class="card premium-card upload-card">
+                            <div class="card-header">
+                                <div class="header-icon green-icon"><i class="ph-fill ph-file-text"></i></div>
+                                <div>
+                                    <h2>Income & Tax Verification</h2>
+                                    <p id="uploadSubtitle">Upload Passbook and Optional ITR.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Document Hint List based on profile -->
+                            <div class="doc-requirements">
+                                <ul id="docReqList" class="doc-list">
+                                    <li><i class="ph-fill ph-check-circle text-primary"></i> Last 6 Months Bank Passbook</li>
+                                    <li><i class="ph-fill ph-info text-primary"></i> ITR Filing (Optional if income < 1L)</li>
+                                </ul>
+                            </div>
+
+                            <div class="drop-zone" id="dropZone">
+                                <div class="drop-zone-content">
+                                    <div class="upload-icon-wrapper">
+                                        <i class="ph-duotone ph-cloud-arrow-up"></i>
+                                    </div>
+                                    <h4>Drop all required documents here</h4>
+                                    <p class="drop-hint">Drag & drop or <span class="text-primary font-bold">browse</span> files</p>
+                                    <p class="drop-formats">JPG, PNG, PDF up to 10MB total (multi-select allowed)</p>
+                                </div>
+                                <div class="upload-progress-bar"></div>
+                                <!-- Allow Multiple Files for GST + ITR, etc. -->
+                                <input type="file" id="fileInput" accept=".jpg,.jpeg,.png,.pdf" multiple hidden>
+                            </div>
+                            <div id="fileListPreview" class="file-list-preview hidden"></div>
+                        </div>
+
+                        <!-- Action Button -->
+                        <button type="button" class="btn-primary engine-btn" id="analyzeBtn">
+                            <span class="btn-text">Run Engine Analysis</span>
+                            <i class="ph-bold ph-magic-wand"></i>
+                            <div class="btn-shine"></div>
+                        </button>
+
+                    </div>
+
+                    <!-- Right Column: Live Analysis Dashboard (Output) -->
+                    <div class="analysis-section" id="outputSection">
+                        
+                        <!-- Empty/Loading State Layout (shown before generation) -->
+                        <div class="output-placeholder" id="outputPlaceholder">
+                            <div class="radar-container">
+                                <div class="radar"></div>
+                                <i class="ph-duotone ph-scan radar-icon"></i>
+                            </div>
+                            <h3>Engine Ready to Initialize</h3>
+                            <p>Awaiting applicant inputs and documentation to commence the underwriting simulation.</p>
+                        </div>
+
+                        <!-- Actual Dashboard (Hidden initially) -->
+                        <div class="output-content hidden" id="outputContent">
+                            
+                            <!-- Decision Banner -->
+                            <div class="decision-banner approved">
+                                <div class="banner-icon-area">
+                                    <i class="ph-fill ph-check-circle"></i>
+                                    <div class="icon-ring"></div>
+                                </div>
+                                <div class="banner-text">
+                                    <h3 class="status-title">Eligibility: <span class="success-text">APPROVED</span></h3>
+                                    <p>Risk parameters matched. Instant disbursal cleared.</p>
+                                </div>
+                            </div>
+
+                            <!-- Core Metrics -->
+                            <div class="metrics-grid">
+                                
+                                <!-- Score Card (Will toggle CIBIL vs CMR) -->
+                                <div class="card premium-card metric-card cibil-card">
+                                    <div class="card-bg-glow"></div>
+                                    <h3 id="scoreTitle">Consumer CIBIL</h3>
+                                    <div class="gauge-wrapper">
+                                        <svg viewBox="0 0 140 140" class="gauge-svg">
+                                            <defs>
+                                                <linearGradient id="scoreGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                                                    <stop offset="0%" stop-color="#10B981" />
+                                                    <stop offset="100%" stop-color="#34D399" />
+                                                </linearGradient>
+                                                <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                                                    <feGaussianBlur stdDeviation="8" result="blur" />
+                                                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                                </filter>
+                                            </defs>
+                                            <circle cx="70" cy="70" r="60" class="gauge-bg"></circle>
+                                            <circle cx="70" cy="70" r="60" class="gauge-progress" id="gaugeProgress" filter="url(#glow)"></circle>
+                                        </svg>
+                                        <div class="gauge-content">
+                                            <span class="score-value" id="cibilScore">0</span>
+                                            <span class="score-total" id="scoreMax">/ 900</span>
+                                        </div>
+                                    </div>
+                                    <div class="badge badge-success">
+                                        <i class="ph-fill ph-trend-up"></i> <span id="scoreBadgeText">Excellent</span>
+                                    </div>
+                                </div>
+
+                                <!-- Offer Details -->
+                                <div class="offer-cards-vertical">
+                                    
+                                    <div class="card premium-card metric-card detail-card limit-card">
+                                        <div class="detail-icon-wrap">
+                                            <div class="detail-icon">
+                                                <i class="ph-fill ph-wallet"></i>
+                                            </div>
+                                        </div>
+                                        <div class="detail-text">
+                                            <span class="detail-label">Approved Limit</span>
+                                            <div class="value-container">
+                                                <h2 class="detail-value" id="approvedLimit">₹0</h2>
+                                            </div>
+                                        </div>
+                                        <div class="card-decoration"></div>
+                                        <div class="card-border-gradient"></div>
+                                    </div>
+
+                                    <div class="card premium-card metric-card detail-card rate-card">
+                                        <div class="detail-icon-wrap">
+                                            <div class="detail-icon green-icon">
+                                                <i class="ph-fill ph-percent"></i>
+                                            </div>
+                                        </div>
+                                        <div class="detail-text">
+                                            <span class="detail-label">Interest Rate (p.a.)</span>
+                                            <div class="value-container">
+                                                <h2 class="detail-value" id="interestRate">0%</h2>
+                                            </div>
+                                        </div>
+                                        <div class="card-border-gradient green-gradient"></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Trust Footer Info -->
+                            <div class="trust-footer">
+                                <div class="trust-badge">
+                                    <div class="icon-box"><i class="ph-fill ph-shield-check"></i></div>
+                                    <span>256-bit Secure</span>
+                                </div>
+                                <div class="trust-line"></div>
+                                <div class="trust-badge">
+                                    <div class="icon-box green-box"><i class="ph-fill ph-lightning"></i></div>
+                                    <span>Instant Disbursal</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="ph-fill ph-bank"></i>
+                </div>
+                <span class="logo-text">Cred<span class="logo-highlight">Vault</span></span>
+            </div>
+            <p>&copy; 2026 CredVault. Built with Next-Gen Underwriting AI.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
